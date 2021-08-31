@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Login",
+    "path": "/Login",
+    "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Login.vue",
+    "chunkName": "pages/Login",
+    "_name": "_55d71613"
+  },
+  {
+    "name": "Registration",
+    "path": "/Registration",
+    "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Registration.vue",
+    "chunkName": "pages/Registration",
+    "_name": "_d9364402"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_14bd531c"
+  }
+]
