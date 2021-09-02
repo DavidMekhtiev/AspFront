@@ -1,4 +1,4 @@
-export { default as SideBar } from '../..\\components\\SideBar.vue'
+
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

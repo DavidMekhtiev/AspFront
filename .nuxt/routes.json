@@ -14,6 +14,13 @@
     "_name": "_d9364402"
   },
   {
+    "name": "Students",
+    "path": "/Students",
+    "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Students.vue",
+    "chunkName": "pages/Students",
+    "_name": "_74d9fa5e"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\index.vue",

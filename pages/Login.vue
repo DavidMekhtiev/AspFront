@@ -118,7 +118,11 @@ export default {
         });
       if (!anyError) {
         console.log(resp.data);
-        this.$router.push({ path: '/' , params: { auth: resp.data }});
+        localStorage.token = resp.data.token;
+        localStorage.email = resp.data.email;
+        localStorage.role = resp.data.role;
+        localStorage.userId = resp.data.userId;
+        this.$router.push({ path: '/' });
       }
     },
   },
