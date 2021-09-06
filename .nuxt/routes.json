@@ -1,5 +1,33 @@
 [
   {
+    "name": "Admins",
+    "path": "/Admins",
+    "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Admins.vue",
+    "chunkName": "pages/Admins",
+    "_name": "_0c348d6c"
+  },
+  {
+    "name": "Centers",
+    "path": "/Centers",
+    "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Centers.vue",
+    "chunkName": "pages/Centers",
+    "_name": "_dc975330"
+  },
+  {
+    "name": "Cities",
+    "path": "/Cities",
+    "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Cities.vue",
+    "chunkName": "pages/Cities",
+    "_name": "_e0c939e2"
+  },
+  {
+    "name": "Countries",
+    "path": "/Countries",
+    "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Countries.vue",
+    "chunkName": "pages/Countries",
+    "_name": "_cff4ea44"
+  },
+  {
     "name": "Login",
     "path": "/Login",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Login.vue",
@@ -14,11 +42,25 @@
     "_name": "_d9364402"
   },
   {
+    "name": "Roles",
+    "path": "/Roles",
+    "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Roles.vue",
+    "chunkName": "pages/Roles",
+    "_name": "_5d382932"
+  },
+  {
     "name": "Students",
     "path": "/Students",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Students.vue",
     "chunkName": "pages/Students",
     "_name": "_74d9fa5e"
+  },
+  {
+    "name": "Teachers",
+    "path": "/Teachers",
+    "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Teachers.vue",
+    "chunkName": "pages/Teachers",
+    "_name": "_7145a117"
   },
   {
     "name": "index",

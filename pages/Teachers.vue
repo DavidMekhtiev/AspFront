@@ -2,7 +2,7 @@
 <div class=" absolute w-full h-full top-0 left-0 overflow-auto">
   <div class=" absolute top-1/3 left-1/2 -ml-80 bg-gray-900 text-white p-2 rounded">
     <a class=" border mb-2 p-1 rounded-sm hover:bg-white hover:text-black" href="/">Home</a>
-    <button class=" border mb-2 p-1 rounded-sm hover:bg-white hover:text-black" v-on:click="showModal = true" @click="createShow = true">Add student</button>
+    <button class=" border mb-2 p-1 rounded-sm hover:bg-white hover:text-black" v-on:click="showModal = true" @click="createShow = true">Add Teacher</button>
     <table class=" border-collapse border">
       <thead>
         <tr>
@@ -17,20 +17,20 @@
         </tr>
       </thead>
       <tbody class=" text-center">
-        <tr v-for="stud in students" :key="stud.Id">
-          <td class=" border">{{ stud.id }}</td>
-          <td class=" border">{{ stud.firstName }}</td>
-          <td class=" border">{{ stud.middleName }}</td>
-          <td class=" border">{{ stud.lastName }}</td>
-          <td class=" border">{{ stud.email }}</td>
-          <td class=" border">{{ stud.iin }}</td>
+        <tr v-for="teach in teachers" :key="teach.Id">
+          <td class=" border">{{ teach.id }}</td>
+          <td class=" border">{{ teach.firstName }}</td>
+          <td class=" border">{{ teach.middleName }}</td>
+          <td class=" border">{{ teach.lastName }}</td>
+          <td class=" border">{{ teach.email }}</td>
+          <td class=" border">{{ teach.iin }}</td>
           <td class=" border p-1">
-            <button class=" hover:bg-white hover:text-black w-full" v-on:click="deleteStudent(stud)">
+            <button class=" hover:bg-white hover:text-black w-full" v-on:click="deleteTeacher(teach)">
               X
             </button>
           </td>
           <td class=" border p-1">
-            <button class=" hover:bg-white hover:text-black w-full" v-on:click="fillBlanks(stud)" @click="showModal = true; createShow = false">
+            <button class=" hover:bg-white hover:text-black w-full" v-on:click="fillBlanks(teach)" @click="showModal = true; createShow = false">
               Edit
             </button>
           </td>
@@ -263,7 +263,7 @@ import axios from "axios";
 export default {
   data() {
     return {
-      students: null,
+      teachers: null,
       showModal: false,
       createShow: false,
       email: null,
@@ -275,7 +275,7 @@ export default {
     };
   },
   async mounted(){
-      this.getStudents();
+      this.getTeachers();
   },
   methods: {
     checkFields() {
@@ -285,7 +285,7 @@ export default {
         if(this.createShow == true){
           this.create();
         }else{
-          this.editStudent();
+          this.editTeacher();
         }
       }
     },
@@ -296,7 +296,7 @@ export default {
         LastName: this.lastName,
         MiddleName: this.middleName,
         IIN: this.iin,
-        RoleId: 4,
+        RoleId: 2,
       };
       let anyError = false;
       await axios
@@ -310,10 +310,10 @@ export default {
         this.showModal = false;
         this.createShow = false;
         this.clearVar();
-        this.getStudents();
+        this.getTeachers();
       }
     },
-    async editStudent(){
+    async editTeacher(){
       const user = {
         Id: this.id,
         Email: this.email,
@@ -321,7 +321,7 @@ export default {
         LastName: this.lastName,
         MiddleName: this.middleName,
         IIN: this.iin,
-        RoleId: 4,
+        RoleId: 2,
       };
       let anyError = false;
       await axios
@@ -334,29 +334,29 @@ export default {
       if (!anyError) {
         this.showModal = false;
         this.clearVar();
-        this.getStudents();
+        this.getTeachers();
       }
     },
-    async deleteStudent(student)
+    async deleteTeacher(teacher)
     {
       await axios
-      .delete("https://localhost:44302/api/users/" + student.id);
+      .delete("https://localhost:44302/api/users/" + teacher.id);
   
-      this.students.splice(this.students.indexOf(student),1);
+      this.teachers.splice(this.teachers.indexOf(teacher),1);
     },
-    async getStudents(){
+    async getTeachers(){
       await axios
-      .get("https://localhost:44302/api/users/roles/4")
-      .then(response => (this.students = response.data));
+      .get("https://localhost:44302/api/users/roles/2")
+      .then(response => (this.teachers = response.data));
       this.clearVar();
     },
-    async fillBlanks(student){
-        this.email = student.email;
-        this.firstName = student.firstName;
-        this.lastName = student.lastName;
-        this.middleName = student.middleName;
-        this.iin = student.iin;
-        this.id = student.id;
+    async fillBlanks(teacher){
+        this.email = teacher.email;
+        this.firstName = teacher.firstName;
+        this.lastName = teacher.lastName;
+        this.middleName = teacher.middleName;
+        this.iin = teacher.iin;
+        this.id = teacher.id;
     },
     async clearVar(){
         this.email = null;
