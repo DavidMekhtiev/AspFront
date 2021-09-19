@@ -276,10 +276,11 @@ export default {
   },
   async mounted(){
       this.getStudents();
+      this.getCenters();
   },
   methods: {
     checkFields() {
-      if (this.email == null || this.firstName == null || this.lastName == null || this.middleName == null || this.iin == null) {
+      if (this.email == null || this.firstName == null || this.lastName == null || this.middleName == null || this.iin == null || this.centr == "") {
         alert("Not all fields are correct");
       } else {
         if(this.createShow == true){
@@ -309,8 +310,8 @@ export default {
       if (!anyError) {
         this.showModal = false;
         this.createShow = false;
-        this.clearVar();
         this.getStudents();
+        this.clearVar();
       }
     },
     async editStudent(){
@@ -333,8 +334,8 @@ export default {
 
       if (!anyError) {
         this.showModal = false;
-        this.clearVar();
         this.getStudents();
+        this.clearVar();
       }
     },
     async deleteStudent(student)
@@ -348,7 +349,6 @@ export default {
       await axios
       .get("https://localhost:44302/api/users/roles/4")
       .then(response => (this.students = response.data));
-      this.clearVar();
     },
     async fillBlanks(student){
         this.email = student.email;
@@ -368,5 +368,3 @@ export default {
   },
 };
 </script>
-
-

@@ -3,70 +3,60 @@
     "name": "Admins",
     "path": "/Admins",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Admins.vue",
-    "chunkName": "pages/Admins",
-    "_name": "_0c348d6c"
+    "chunkName": "pages/Admins"
   },
   {
     "name": "Centers",
     "path": "/Centers",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Centers.vue",
-    "chunkName": "pages/Centers",
-    "_name": "_dc975330"
+    "chunkName": "pages/Centers"
   },
   {
     "name": "Cities",
     "path": "/Cities",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Cities.vue",
-    "chunkName": "pages/Cities",
-    "_name": "_e0c939e2"
+    "chunkName": "pages/Cities"
   },
   {
     "name": "Countries",
     "path": "/Countries",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Countries.vue",
-    "chunkName": "pages/Countries",
-    "_name": "_cff4ea44"
+    "chunkName": "pages/Countries"
   },
   {
     "name": "Login",
     "path": "/Login",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Login.vue",
-    "chunkName": "pages/Login",
-    "_name": "_55d71613"
+    "chunkName": "pages/Login"
   },
   {
     "name": "Registration",
     "path": "/Registration",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Registration.vue",
-    "chunkName": "pages/Registration",
-    "_name": "_d9364402"
+    "chunkName": "pages/Registration"
   },
   {
     "name": "Roles",
     "path": "/Roles",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Roles.vue",
-    "chunkName": "pages/Roles",
-    "_name": "_5d382932"
+    "chunkName": "pages/Roles"
   },
   {
     "name": "Students",
     "path": "/Students",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Students.vue",
-    "chunkName": "pages/Students",
-    "_name": "_74d9fa5e"
+    "chunkName": "pages/Students"
   },
   {
     "name": "Teachers",
     "path": "/Teachers",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\Teachers.vue",
-    "chunkName": "pages/Teachers",
-    "_name": "_7145a117"
+    "chunkName": "pages/Teachers"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\mekht\\\\Desktop\\\\asp_front-main\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_14bd531c"
+    "chunkName": "pages/index"
   }
 ]

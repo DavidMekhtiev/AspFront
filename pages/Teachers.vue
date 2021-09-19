@@ -309,8 +309,8 @@ export default {
       if (!anyError) {
         this.showModal = false;
         this.createShow = false;
-        this.clearVar();
         this.getTeachers();
+        this.clearVar();
       }
     },
     async editTeacher(){
@@ -348,7 +348,6 @@ export default {
       await axios
       .get("https://localhost:44302/api/users/roles/2")
       .then(response => (this.teachers = response.data));
-      this.clearVar();
     },
     async fillBlanks(teacher){
         this.email = teacher.email;

@@ -255,6 +255,10 @@ export default {
       iin: null
     };
   },
+  async mounted(){
+    this.getCenters();
+    this.getUsers();
+  },
   methods: {
     checkFields() {
       if (this.email == null || this.password == null
@@ -286,7 +290,7 @@ export default {
       if (!anyError) {
         this.$router.push("/login");
       }
-    },
+    }
   },
 };
 </script>
